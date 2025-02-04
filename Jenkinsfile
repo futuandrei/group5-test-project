@@ -4,23 +4,23 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 script {
-                    git branch: 'main', url: 'https://github.com/futuandrei/group5-test-project.git'
+                    git branch: env.BRANCH_NAME, url: 'https://github.com/futuandrei/group5-test-project.git'
                 }
             }
         }
         stage('Build') {
             steps {
-                echo 'Building...'
+                echo "Building branch: ${env.BRANCH_NAME}"
             }
         }
         stage('Test') {
             steps {
-                echo 'Running tests...'
+                echo "Running tests on branch: ${env.BRANCH_NAME}"
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying...'
+                echo "Deploying branch: ${env.BRANCH_NAME}"
             }
         }
     }
