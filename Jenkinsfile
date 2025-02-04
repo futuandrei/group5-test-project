@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: "${GIT_BRANCH}", url: 'https://github.com/team-name/repo-name.git'
+                git branch: "${GIT_BRANCH}", url: 'https://github.com/futuandrei/group5-test-project.git'
             }
         }
         stage('Install Dependencies') {
