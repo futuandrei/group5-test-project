@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                script {
-                    git branch: 'main', url: 'https://github.com/futuandrei/group5-test-project.git'
-                }
+                checkout scm  // This auto-checks out the correct branch in Multibranch Pipelines
             }
         }
         stage('Build') {
