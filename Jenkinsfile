@@ -1,24 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                git branch: "${GIT_BRANCH}", url: 'https://github.com/futuandrei/group5-test-project.git'
-            }
-        }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application...'
+                script {
+                    def branchName = env.GIT_BRANCH ?: 'main'  // Default to 'main' if GIT_BRANCH is not set
+                    git branch: branchName, url: 'https://github.com/team-name/repo-name.git'
+                }
             }
         }
     }
