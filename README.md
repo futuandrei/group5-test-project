@@ -6,6 +6,8 @@ Change.
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=futuandrei_group5-test-project&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=futuandrei_group5-test-project)
 
+## Changes 
+
 This is Andrei making little change to Readme to test Jenkins branch: jenkins-andrei-01
 
 This is Saara just making a little change in this file, practicing amplify deployment
