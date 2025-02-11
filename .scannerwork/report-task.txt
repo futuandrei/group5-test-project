@@ -1,0 +1,6 @@
+projectKey=group5-test-project
+serverUrl=http://localhost:9001
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9001/dashboard?id=group5-test-project
+ceTaskId=740dcd12-9cae-4018-8547-4672ebdcc3e7
+ceTaskUrl=http://localhost:9001/api/ce/task?id=740dcd12-9cae-4018-8547-4672ebdcc3e7
